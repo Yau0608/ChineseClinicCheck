@@ -13,22 +13,20 @@ load_dotenv() # Load variables from .env file
 # On Windows, it's typically here:
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# Coordinates you found in Step 2 (REPLACE THESE WITH YOUR VALUES)
-REFRESH_BTN_XY = (540, 1050)
-BOOK_BTN_XY = (880, 1350)
+# === YOUR VALUES ARE HERE ===
+# I have rounded the numbers you provided.
+REFRESH_BTN_XY = (95, 1282)
+BOOK_BTN_XY = (899, 1603)
 
-# Bounding box for the Acupuncture button to check for text
-# (left, top, right, bottom)
-ACUPUNCTURE_BOX = (100, 600, 980, 750)
+# Your measured bounding box. Re-measure to be tighter around the "未有配額" text if you can!
+ACUPUNCTURE_BOX = (82, 1029, 1000, 1174) # (left, top, right, bottom)
 
-# App package name (You can find this with an "App Inspector" app on the Play Store)
-# Or use 'adb shell "dumpsys window windows | grep -E 'mCurrentFocus'"' when the app is open
-# It's likely something like 'hk.org.ha.cmk' but you should verify.
-APP_PACKAGE_NAME = "hk.org.ha.cmk" # This is a guess, please verify
-APP_ACTIVITY_NAME = ".MainActivity" # This is a guess
+# !!! CORRECT VALUES FROM YOUR SCREENSHOT !!!
+APP_PACKAGE_NAME = "hk.org.ha.CMHandy"
+APP_ACTIVITY_NAME = "hk.org.ha.cmhandy.MainActivity" 
 
-# Discord Webhook URL from .env file
-DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
+# Your Discord Webhook URL from the .env file
+DISCORD_WEBHOOK_URL = os.getenv("https://discord.com/api/webhooks/1381545841600364564/xlxCTvJH0-qPit9Ho35fEOCKR4dKiMTlLitbX5TzQChRNlPJeRnofP2dwUVIFsvaR7In")
 
 # --- HELPER FUNCTIONS ---
 
