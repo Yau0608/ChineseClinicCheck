@@ -26,7 +26,7 @@ APP_PACKAGE_NAME = "hk.org.ha.CMHandy"
 APP_ACTIVITY_NAME = "hk.org.ha.cmhandy.MainActivity" 
 
 # Your Discord Webhook URL from the .env file
-DISCORD_WEBHOOK_URL = os.getenv("https://discord.com/api/webhooks/1381545841600364564/xlxCTvJH0-qPit9Ho35fEOCKR4dKiMTlLitbX5TzQChRNlPJeRnofP2dwUVIFsvaR7In")
+DISCORD_WEBHOOK_URL = os.getenv("For github")
 
 # --- HELPER FUNCTIONS ---
 
